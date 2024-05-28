@@ -1,4 +1,4 @@
-import conta, usuario
+import conta, pessoa
 
 usuarios = []
 
@@ -9,7 +9,7 @@ def criar_usuario(*, nome, data, cpf, endereco):
     if checar_usuario(cpf):
         print ("\nUsuário já cadastrado.")
     else:
-        usuario.Usuario(nome=nome, data_nascimento=data, cpf=cpf, endereco=endereco)
+        pessoa.Usuario(nome=nome, data_nascimento=data, cpf=cpf, endereco=endereco)
         usuarios.append(cpf)
         print ("\nUsuário cadastrado com sucesso!")
 
